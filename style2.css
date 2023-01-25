@@ -23,9 +23,9 @@ a {
     padding: 5px;
 
 }
-  a:hover {
-    border-top: 3px #0065fc solid;
-    padding-top: 25% ;
+a:hover {
+    border-top: 2px #0065fc solid;
+    padding-top: 20% ;
     color:#0065fc;
     
 }
@@ -35,10 +35,8 @@ h1 {
 }
 
 body {
-    padding: 30px 30px 0 30px;
     font-family: 'Raleway-VariableFont_wght', sans-serif;
-    width: 100%;
-    margin: 0;
+    margin: 20px 20px 0 20px;
 }
 
 
@@ -120,16 +118,15 @@ body {
 .filtres{
     display: flex;
     flex-direction: row;
-    gap: 10px;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
-    
+    padding-left: 5px;
 }
 .filtresphone {
     display: flex;
     justify-content: space-evenly;
-    width: 50%;
+    width: 70%;
 }
 .filtretitle {
     padding: 6px;
@@ -189,6 +186,10 @@ main {
     padding-right: 10px;
     
 }
+
+.titreheb {
+    padding:10px 0px 0px 20px;
+}
 .hebergements p {
     font-size: 12px;
     
@@ -201,7 +202,6 @@ main {
     border-radius: 10px 10px 0 0;
     width: 100%;
     height: 100px;
-    margin-bottom: 10px;
 }
 
 .cardsheb {
@@ -213,20 +213,18 @@ main {
     box-shadow: 2px 2px 0px rgb(222, 235, 255, 0.5);
     border-radius: 10px;
     
-    height: 200px;
+    height: 180px;
 }
 
 .infoheb {
-    position: relative;
-    top: -20px;
 }
 .infoheb p {
     position: relative;
-    top: -10px;
 }
 
 .hebergements h2{
     font-size: 14px;
+    padding: 10px 0px 0px 20px;
 }
 .cardsheb:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
@@ -239,13 +237,16 @@ main {
 }
 
 .container {
-    font-size: 12px;
+    font-size: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     
 }
 
+.cardACT .container h1 {
+    padding-left: 10px;
+}
 
 .populaires {
     background-color: #F2F2F2;
@@ -319,11 +320,10 @@ main {
 }
 
 .activites {   
-    height: 400px;
+    height: 360px;
     margin-top: 10px;
     display: flex;
-    justify-content: space-between;
-    margin: auto;
+    justify-content: space-between;    
 }
 
 
@@ -332,7 +332,7 @@ main {
 .cardactivites {
     display: flex;
     justify-content: space-between;
-
+    width: 100%;
 }
 
 .cardACT {
@@ -377,14 +377,14 @@ footer h1 {
     display: flex;
     flex-direction: column;
     justify-content:center ;
-    padding-right: 70px;
-
+    padding-right: 200px;
+    padding-left: 50px;
 }
 
 .footer2 {
     display: flex;
     flex-direction: column;
-    padding-right: 100px;
+    padding-right: 220px;
 }
 
 
@@ -414,7 +414,7 @@ article {
         flex-direction: column;
         align-content: space-between;
         flex-wrap: wrap;
-        width: 102%;
+        width: 100%;
     }
     .hebergements {
         margin-bottom: 30px;
@@ -457,8 +457,15 @@ article {
     }
 
     .activites img {
-        height: 180px;
+        height: 150px;
         box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
+    }
+
+    .footer {
+        padding-right: 45px;
+    }
+    .footer2 {
+        padding-right: 45px;
     }
 }
 
