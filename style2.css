@@ -87,7 +87,7 @@ body {
     
 
 .une {
-    background-color: #b0adad;
+    background-color: #F2F2F2;
     height: 40px;
     border-radius: 20px 0px 0px 20px;
     width: 40px;
@@ -472,28 +472,45 @@ article {
 
 
 @media screen and (max-width:768px) {
-
+    body {
+        width: fit-content;
+        margin: 0;
+    }
     
     header {
         width: fit-content;
     }
 
     header img {
-        padding-bottom: 35px;
+        padding-bottom: 20px;
+        width: 15%;
+        margin:15px;
     }
 
+    .headerphone {
+        margin: 30px;
+    }
     .filtre {
         display: flex;
-        width: 45%;
+        width: 40%;
         margin: auto;
-        
+        border-radius: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+        justify-content: flex-start;
     }
+    .filtre i {
+        margin-right: 10px;
+    }
+
     .filtresphone {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        height: 80px;
+        height: 115px;
         width: 100%;
+        font-size: 15px;
     }
     .filtres {
         display: flex;
@@ -501,6 +518,7 @@ article {
         text-align: left;
         width: 100%;
         justify-content: space-evenly;
+        padding-left: 0;
     }
     .logements {
         flex-direction: column;
@@ -518,17 +536,17 @@ article {
         display: flex;
         justify-content: center;
     }
-    a:hover {
+    a:active {
         border-bottom: 3px #0065fc solid;
         padding-bottom: 5% ;
         border-top: none;
     }
 
-    header img {
-        width: 25%;
-
-    }
     
+    
+    .search {
+        padding: 0;
+    }
     .iconeheader {
         display: flex;
         justify-content: space-around;
@@ -564,6 +582,9 @@ article {
     .hebergements{
         height: auto;
         width: auto;
+        background-color: white;
+        border-radius: inherit;
+        box-shadow: none;
     }
     .hebergements img {
         object-fit: cover;
@@ -575,24 +596,36 @@ article {
         width: 100%;
     }
 
+    .hebergements h2 {
+        display: none;
+    }
     .logements {
         display: flex;
         flex-direction: column-reverse;
     }
     .cardsheb {
         width: auto;
+        box-shadow: 2px 2px 6px rgb(0 0 0 / 5%);
+        ;
     }
     .populaires {
-        width: fit-content;
+        width: auto;
+        border-radius: inherit;
+        box-shadow: none;
     }
     .cardpopulaires {
         height: 900px;
     }
 
+    .titreACT {
+        padding-left: 20px;
+        font-size: 10px;
+        width: 40%;
+    }
     .cardactivites {
         flex-direction: column;
         gap: 10px;
-    
+        align-items: center;
     }
     .activites {
         display: flex;
@@ -602,11 +635,14 @@ article {
         height: auto;
     }
     .cardACT {
-        width: auto;
+        width: 90%;
+        border-radius: 30px;
     }
 
     .activites img {
         max-width: none;
+        object-fit: cover;
+        border-radius: 30px 30px 0 0;
     }
     footer {
         display: flex;
