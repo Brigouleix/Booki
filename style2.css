@@ -216,8 +216,6 @@ main {
     height: 180px;
 }
 
-.infoheb {
-}
 .infoheb p {
     position: relative;
 }
@@ -535,17 +533,25 @@ article {
     nav a {
         display: flex;
         justify-content: center;
+        width: 50%s;
     }
     a:active {
         border-bottom: 3px #0065fc solid;
         padding-bottom: 5% ;
         border-top: none;
     }
+    a:hover {
+        border-top: none;
+        padding-top: 0;
 
+    }
     
     
     .search {
-        padding: 0;
+        padding-top: 25px;
+        justify-content: center;
+        align-content: flex-start;
+        flex-wrap: wrap;
     }
     .iconeheader {
         display: flex;
@@ -553,12 +559,18 @@ article {
         width: 100%;
         border-bottom: #DEEBFF 2px solid;
     }
+
+    .une {
+        height: 55px;
+    }
     .box.deux {
         width: 250px;
+        height: 55px;
     }
 
     .searchbar{
         width: 250px;
+        height: 55px;
     }
     .box.trois button:before {
         content: "\f002";
@@ -578,6 +590,7 @@ article {
         display: flex;
         width: 50px;
         padding-left: 10px;
+        height: 55px;
       }
     .hebergements{
         height: auto;
