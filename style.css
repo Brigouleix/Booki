@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Raleway-VariableFont_wght', sans-serif;
-    margin: 20px 20px 0 20px;
+    margin: auto;
     max-width: 1400px;
     box-sizing: border-box;
     padding: 0;
@@ -35,7 +35,7 @@ a {
 }
 a:hover {
     border-top: 2px #0065fc solid;
-    padding-top: 20% ;
+    padding-top: 10% ;
     color:#0065fc;
     
 }
@@ -503,8 +503,7 @@ article {
         width: 40%;
         margin: auto;
         border-radius: 30px;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        height :25%;
         padding-left: 10px;
         justify-content: flex-start;
     }
@@ -548,18 +547,17 @@ article {
         display: flex;
         justify-content: center;
         width: 50%;
+        border-bottom: #b0adad73 2px solid;
+
     }
-    a:active {
+
+    nav a:active, nav a:hover {
         border-bottom: 3px #0065fc solid;
         padding-bottom: 5% ;
         border-top: none;
         font-weight: 900;
         color: #0065fc;
-    }
-    a:hover {
-        border-top: none;
-        padding-top: 0;
-        border-bottom: 3px #0065fc solid;
+        padding-top: inherit;
     }
     
     
@@ -573,7 +571,7 @@ article {
         display: flex;
         justify-content: space-around;
         width: 100%;
-        border-bottom: #b0adad73 2px solid;
+        
     }
 
     .une {
