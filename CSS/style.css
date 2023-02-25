@@ -22,7 +22,7 @@ nav {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 20px;
+    padding: 20px 0px;
     
 }
 
@@ -32,11 +32,12 @@ a {
 
 }
 nav a {
-    padding: 5px;
+    margin-left: 30px;
+    padding-bottom: 5px;
 }
 nav a:hover {
-    border-top: 2px #0065fc solid;
-    padding-top: 10% ;
+    border-top: 5px #0065fc solid;
+    padding-top: 8.5% ;
     color:#0065fc;
     
 }
@@ -46,20 +47,23 @@ h1 {
 }
 
 
-
-
 .search {
-    display: flex;
-    align-items: center;
-    width: 280px;
-    height: 25px;
-    padding: 6px;
-    border: none;
-}
-.search {
-    width: 100%;
+    display: flex; /* Utiliser Flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+    justify-content: flex-start; /* Centrer les éléments horizontalement */
     height: 2em;
 }
+  
+  .search form {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+  }
+  
+  .search .box {
+    display: flex; /* Utiliser Flexbox pour aligner les éléments en ligne */
+    align-items: center; /* Aligner les éléments verticalement au centre */
+  }
+  
 .trois button { 
     background-color: #0065fc;
     color: white;
@@ -87,13 +91,8 @@ h1 {
     color: black;
     font-size: 14px;
     font-weight: 700;
-
-
 }
     
-    
-    
-
 .une {
     background-color: #F2F2F2;
     height: 40px;
@@ -138,7 +137,7 @@ h1 {
 .filtresphone {
     display: flex;
     justify-content: space-evenly;
-    width: 55%;
+    width: 65%;
 }
 .filtres p{
     margin-top: 0px;
@@ -191,7 +190,6 @@ main {
 .hebergements {
     background-color: #F2F2F2;
     border-radius: 20px;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
     width: 60%;
     height: 550px;
     padding-left: 10px;
@@ -222,7 +220,7 @@ main {
     width: 25%;
     margin-top: 6px;
     margin-bottom: 6px;
-    box-shadow: 2px 2px 0px rgb(222, 235, 255, 0.5);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
     border-radius: 20px;
     
     height: 180px;
@@ -270,7 +268,6 @@ main {
 .populaires {
     background-color: #F2F2F2;
     border-radius: 20px;
-    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.2);
     width: 35%;
     height: 550px;
     
@@ -297,8 +294,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 35px;
-    
+    padding: 0px 20px 0px 20px; 
 }
 .populaires img {
     border-radius: 20px 0 0 20px;
@@ -324,8 +320,9 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    box-shadow: 2px 2px 0px rgb(222, 235, 255, 0.5);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
     border-radius: 20px;
+    margin-top: 4px;
 }
 
 
@@ -349,13 +346,13 @@ main {
     display: flex;
     flex-direction: column;
     background-color: white;    
-    box-shadow: 2px 2px 0px rgb(222, 235, 255, 0.5);
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 10%);
     border-radius: 10px;
     width: 20%;
 }
 
 .activites img {
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
     height: 320px;
     max-height:320px;
     width: 100%;
@@ -384,9 +381,9 @@ footer h1 {
 .footer {
     display: flex;
     flex-direction: column;
-    justify-content:center ;
-    padding-right: 200px;
     padding-left: 50px;
+    flex-wrap: nowrap;
+    width: calc(100%/3);
 }
 
 .footer2 {
@@ -406,7 +403,7 @@ article {
 
 
 
-@media screen and (max-width: 991px)   {
+@media screen and (max-width: 991px) {
 
     body {
         box-sizing: border-box;
@@ -414,13 +411,13 @@ article {
         padding: 0;
     }
 
-    main{
+    
+    main {
         display:flex;
         flex-flow: column;
-
-
     }
-    .logements{
+
+    .logements {
         display: flex;
         flex-direction: column;
         align-content: space-between;
@@ -435,12 +432,12 @@ article {
     .filtresphone {
         display: flex;
         justify-content: space-evenly;
-        width: 80%;
+        width: 90%;
     }
     .cardpopulaires {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         padding: 0 20px 0 20px;
     }
     .populaires {
@@ -453,14 +450,20 @@ article {
     }
 
     .cardspop {
+        height: 150px;
+    }
+    
+    .cardpopulaires a {
         width: 30%;
     }
-
-    .cardACT{
+    .cardACT {
         height: auto;
     }
     
-    .activites{
+    .populaires img {
+        height: 150px;
+    }
+    .activites {
         display: flex;
         flex-wrap: wrap;
         height: auto;
@@ -474,11 +477,8 @@ article {
     .footer {
         padding-right: 45px;
     }
-    .footer2 {
-        padding-right: 45px;
-    }
+   
 }
-
 
 
 @media screen and (max-width:767px) {
@@ -531,6 +531,7 @@ article {
 
     .infos {
         padding-left: 30px;
+        padding-right: 30px;
     }
     .logements {
         flex-direction: column;
@@ -549,14 +550,14 @@ article {
         justify-content: center;
         width: 50%;
         border-bottom: #b0adad73 2px solid;
-
+        padding-bottom: 5%;
+        margin-left: inherit;
     }
 
     nav a:active, nav a:hover {
-        border-bottom: 3px #0065fc solid;
+        border-bottom: 2px #0065fc solid;
         padding-bottom: 5% ;
         border-top: none;
-        font-weight: 900;
         color: #0065fc;
         padding-top: inherit;
     }
@@ -577,6 +578,7 @@ article {
 
     .une {
         height: 55px;
+        width: 55px;
     }
     .box.deux {
         width: 250px;
@@ -606,15 +608,20 @@ article {
         width: 40px;
         height: 55px;
       }
-    .hebergements{
+    
+      
+      
+      .hebergements{
         height: auto;
         width: auto;
         background-color: white;
         border-radius: inherit;
         box-shadow: none;
+        padding: 50px;
     }
     .hebergements img {
         object-fit: cover;
+        height: 150px;
     }
     article {
         display: flex;
@@ -622,9 +629,12 @@ article {
         align-content: center;
         width: 100%;
     }
-
-    .hebergements h2 {
+    .hebergements span {
         display: none;
+    }
+    
+    .hebergements h2 {
+        padding-left: 0px;
     }
     .logements {
         display: flex;
@@ -633,7 +643,7 @@ article {
     .cardsheb {
         width: auto;
         box-shadow: 2px 2px 6px rgb(0 0 0 / 5%);
-        ;
+        height: 235px;
     }
     .populaires {
         width: 100%;
@@ -642,14 +652,18 @@ article {
         height: 100%;
     }
 
+    .populaires a {
+        width: 100%;
+        padding-left: 20px;
+    }
     .populaires img {
-        height: 100px;
+        height: 150px;
         object-fit: cover;
     }
     .cardpopulaires {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        width: auto;
         padding: 25px;
     }
     .cardspop{
