@@ -417,6 +417,10 @@ article {
         flex-flow: column;
     }
 
+    nav a:hover{
+        border-top: none;
+        color: black;
+    }
     .logements {
         display: flex;
         flex-direction: column;
