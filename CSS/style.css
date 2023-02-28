@@ -359,7 +359,7 @@ main {
 }
 
 footer {
-    background-color: rgb(176, 173, 173, 0.3);
+    background-color: #F2F2F2;
     margin: auto;
     margin-top: 20px ;
     padding:  20px;
@@ -529,10 +529,13 @@ article {
         flex-wrap: wrap;
     }
     .filtres {
-        padding: 0 30px;
+        padding: 0 10px;
         display: block;
     }
 
+    .filtres  p:first-child {
+        margin-left: 10px;
+    }
     .infos {
         padding-left: 30px;
         padding-right: 30px;
